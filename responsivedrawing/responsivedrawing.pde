@@ -4,23 +4,35 @@ float b=0;
 
 void setup() {
   size(800, 800);
-  background(255);
+   background(255);
 }
 
 void draw() {
-  fill(r,g,b);
+  //fill(r,g,b);
   ellipse (mouseX, mouseY, 50, 50);
+}
+void mousePressed(){
+  if (mouseButton == LEFT){
+    fill(0);
+    stroke(255);
+  } else if (mouseButton == RIGHT) {
+    fill (255);
+    stroke(0);
+  } 
 }
 
 void keyPressed() {
   background(0);
   if (key =='1') {
-    background(255);
+    background(#FA307E);
   }
+  if (key =='2') {
+  background(#2EF2BF);
 }
-
-void mousePressed(){
-  r = 60;
-  g = 11;
-  b = 35;
+if (key == '3'){
+  background(#F2A72E);
+}
+if(key == '4') {
+  background(#2EDDF2);
+}
 }
